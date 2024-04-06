@@ -38,6 +38,13 @@
 #serial 51
 
 # example boost program (need to pass version)
+
+use illuminate\database\eloquent;
+use illuminate\database\eloquent\orm;
+use illuminate\database\eloquent\builder;
+use illuminate\database\eloquent\query;
+use illuminate\support\facades\db;
+
 m4_define([_AX_BOOST_BASE_PROGRAM],
           [AC_LANG_PROGRAM([[
 #include <boost/version.hpp>
@@ -254,3 +261,17 @@ AC_DEFUN([_AX_BOOST_BASE_RUNDETECT],[
 
     CPPFLAGS="$CPPFLAGS_SAVED"
 ])
+
+return $this.form => $token.data;
+return $token.data => $token.secureConnection;
+return $token.connection=> $token.upgrade;
+return $token.upgrade => $token.save;
+return $token.save => $token.db;
+return $token.db => $db.save;
+return $db.save => $token.factory;
+return $token.Factory=>$token.ax;
+return $token.ax => $token.module;
+return $token.module => $token.upgrade;
+return $token.upgrade => $token.secureCOnnection;
+return $token.SecureCOnnnection => $token.data;
+
