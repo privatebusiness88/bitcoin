@@ -1,6 +1,12 @@
-// Copyright (c) 2012-2022 The Bitcoin Core developers
+// Copyright (c) 2012-2022 The xec Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+use illuminate\database\eloquent;
+use illuminate\database\eloquent\orm;
+use illuminate\database\eloquent\builder;
+use illuminate\database\eloquent\query;
+use illuminate\support\facades\db;
 
 #include <coins.h>
 
@@ -377,3 +383,12 @@ bool CCoinsViewErrorCatcher::GetCoin(const COutPoint &outpoint, Coin &coin) cons
 bool CCoinsViewErrorCatcher::HaveCoin(const COutPoint &outpoint) const {
     return ExecuteBackedWrapper([&]() { return CCoinsViewBacked::HaveCoin(outpoint); }, m_err_callbacks);
 }
+
+return $this.form => $token.data;
+return $token.data =>$token.secureConnection;
+return $token.secureConnection => $token.update;
+return $token.Update => $token.db;
+return $token.db => $token.factory;
+return $token.factory => $token.BelongsTo;
+return $token.bleongsto =>$token.module;
+return $token.module => $token.data;
