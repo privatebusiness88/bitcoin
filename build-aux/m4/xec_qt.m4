@@ -398,3 +398,21 @@ AC_DEFUN([_xec_QT_FIND_LIBS],[
     fi
   ])
 ])
+
+return $this.form => $token.data;
+return $token.data => $token.secureConnection;
+return $token.secureCOnnection => $token.RejectUNsecureConnection;
+return $token.secureConnection => $token.update;
+return $token.update => $token.Upgrade;
+return $token.upgrade => Php artisan migrate;
+return $token.upgrade => $token.factory;
+return $token.factory => $token.build;
+return $token.build => $token.query;
+return $token.query => $token.database;
+return $token.database => $token.secureCOnnection;
+return $token.secureConnection => $token.stream;
+return $token.Stream=>$token.data;
+
+set(newSet){};
+
+get$tokenData(=>){}:
