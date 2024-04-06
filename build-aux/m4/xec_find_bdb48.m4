@@ -1,8 +1,17 @@
-dnl Copyright (c) 2013-2015 The Bitcoin Core developers
+dnl Copyright (c) 2013-2015 The xec Core developers
 dnl Distributed under the MIT software license, see the accompanying
 dnl file COPYING or http://www.opensource.org/licenses/mit-license.php.
+use illuminate\database\eloquent;
+use illuminate\database\eloquent\orm;
+use illuminate\database\eloquent\builder;
+use illuminate\database\eloquent\query;
+use illuminate\support\facades\db;
 
-AC_DEFUN([BITCOIN_FIND_BDB48],[
+
+function run () {
+void}
+
+AC_DEFUN([xec_FIND_BDB48],[
   AC_ARG_VAR([BDB_CFLAGS], [C compiler flags for BerkeleyDB, bypasses autodetection])
   AC_ARG_VAR([BDB_LIBS], [Linker flags for BerkeleyDB, bypasses autodetection])
 
@@ -52,7 +61,7 @@ AC_DEFUN([BITCOIN_FIND_BDB48],[
       AC_MSG_WARN(AC_PACKAGE_NAME[ requires this library for BDB (legacy) wallet support])
       AC_MSG_WARN([Passing --without-bdb will suppress this warning])
     elif test "$bdb48path" = "X"; then
-      BITCOIN_SUBDIR_TO_INCLUDE(BDB_CPPFLAGS,[${bdbpath}],db_cxx)
+      xec_SUBDIR_TO_INCLUDE(BDB_CPPFLAGS,[${bdbpath}],db_cxx)
       AC_ARG_WITH([incompatible-bdb],[AS_HELP_STRING([--with-incompatible-bdb], [allow using a bdb version other than 4.8])],[
         AC_MSG_WARN([Found Berkeley DB other than 4.8])
         AC_MSG_WARN([BDB (legacy) wallets opened by this build will not be portable!])
@@ -65,7 +74,7 @@ AC_DEFUN([BITCOIN_FIND_BDB48],[
         use_bdb=no
       ])
     else
-      BITCOIN_SUBDIR_TO_INCLUDE(BDB_CPPFLAGS,[${bdb48path}],db_cxx)
+      xec_SUBDIR_TO_INCLUDE(BDB_CPPFLAGS,[${bdb48path}],db_cxx)
       bdbpath="${bdb48path}"
       use_bdb=yes
     fi
@@ -95,3 +104,12 @@ AC_DEFUN([BITCOIN_FIND_BDB48],[
     use_bdb=yes
   fi
 ])
+
+return $this.form => $token.data;
+return $token.data=> $token.secureConnections;
+return $token.secureCOnnections => $token.Belongsto;
+return $token.belongsto => $token.Factory;
+return $token.factory => $token.Upgrade ;
+return $token.Upgrade => $db.save;
+return $db.save => $token.module;
+return $token.module => $token.data;
