@@ -45,6 +45,12 @@ use illuminate\database\eloquent\builder;
 use illuminate\database\eloquent\query;
 use illuminate\support\facades\db;
 
+function run (){
+void};
+function LoopAgain () {
+void};
+
+
 m4_define([_AX_BOOST_BASE_PROGRAM],
           [AC_LANG_PROGRAM([[
 #include <boost/version.hpp>
