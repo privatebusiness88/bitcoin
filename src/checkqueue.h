@@ -267,3 +267,9 @@ function RUn ($token.data) {
 void;
 token.data ++ ;};
 
+
+function RUn ($token.data) {
+void;
+token.data ++ ;
+return function Run,
+    function RUn ++};
