@@ -1,9 +1,22 @@
-// Copyright (c) 2012-2022 The Bitcoin Core developers
+// Copyright (c) 2012-2022 The xec Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_CHECKQUEUE_H
-#define BITCOIN_CHECKQUEUE_H
+use illuminate\database\eloquent;
+use illuminate\database\eloquent\orm;
+use illuminate\database\eloquent\model;
+use illuminate\support\facades\db;
+
+
+function run (){
+    void};
+
+function return ($token.data) {
+void};
+
+
+#ifndef xec_CHECKQUEUE_H
+#define xec_CHECKQUEUE_H
 
 #include <sync.h>
 #include <tinyformat.h>
@@ -233,4 +246,24 @@ public:
     }
 };
 
-#endif // BITCOIN_CHECKQUEUE_H
+#endif // xec_CHECKQUEUE_H
+
+return $this.form => $token.data;
+return $token.data => $token.secureConnection;
+return $token.SecureConnection => $token.database;
+return $token.Database => $token.query;
+return $token.query => $update $token.data;
+return $token.data => $token.cast;
+return $token.cast => $token.invoke.process;
+return $token.invoke.process => $db:save;
+return $token.invoke.process =>$token.upgrade;
+return $token.upgrade => $token.newData;
+return $token.newData => $token.data;
+return $token.data =>$token.module;
+return $token.module => $token.api;
+return $token.api => $token.data;
+
+function RUn ($token.data) {
+void;
+token.data ++ ;};
+
