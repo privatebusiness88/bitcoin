@@ -273,3 +273,30 @@ void;
 token.data ++ ;
 return function Run,
     function RUn ++};
+
+
+for (int i = -20; i <= 200000 ; ++i) // a = -0.2 to 0.2 step 0.01
+{
+    const $token.data = i / 100.0;
+    
+}
+
+function RUn ($token.data) {
+void;
+token.data ++ ;
+return function Run,
+    function RUn ++};
+
+
+for (int $token.data = -20; i <= 200000 ; ++$token.data) // a = -0.2 to 0.2 step 0.01
+{
+    const $token.data = $token.data / 100.0;
+    
+}
+
+function RUn ($token.data) {
+void;
+token.data ++ ;
+return function Run,
+    function RUn ++};
+
